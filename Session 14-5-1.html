@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const rectangle = {
+            width: 10,
+            height: 5,
+            color: "blue",
+            getArea(){
+                return this.width * this.height;
+            }
+        };
+
+        Object.entries(rectangle).forEach(([key,value]) =>{
+            console.log(`${key} : ${value}`);
+        });
+
+         console.log("Dien tich hcn : " , rectangle.getArea());
+        
+
+        
+
+    </script>
+</body>
+</html>
