@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let input = prompt ('Nhap vao day so nguyen tu chon, cach nhau boi dau phay.');
+        let number = input.split(",").map(Number);
+        let demSoAm = 0 ;
+        for (let i = 0 ; i < number.length; i++){
+            if (number[i] < 0){
+                demSoAm++;
+
+            }
+        }
+        console.log("So luong so nguyen am trong day so ban nhap la:", demSoAm);
+        
+    </script>
+</body>
+</html>

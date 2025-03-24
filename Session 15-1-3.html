@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbersArray = [1,5,9,12,13,18,24,26,29,35];
+        console.log(numbersArray);
+
+        let maxNumber = numbersArray[0];
+        for (let i = 1; i < numbersArray.length; i++){
+            if(numbersArray[i] > maxNumber){
+                maxNumber = numbersArray[i];
+            }
+        }
+        console.log(`Gia tri lon nhat trong mang la: ${maxNumber}`);
+        
+        let tong = 0;
+        for (let i = 0; i < numbersArray.length; i++){
+            tong += numbersArray[i];
+        }
+      console.log("Gia tri trung binh cac phan tu trong mang la:", tong/numbersArray.length );
+    </script>
+</body>
+</html>

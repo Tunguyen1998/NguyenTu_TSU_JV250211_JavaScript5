@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbersArray = [1,5,9,12,13,18,24,26,29,35];
+
+        let input = prompt("Hay nhap 1 so bat ki lon hon 0");
+
+        input = parseInt(input);
+
+        let flag = false;
+
+        for (let i = 0; i < numbersArray.length; i++){
+            if (input === numbersArray[i]){
+                alert(`Number ${input} is in the array`);
+                flag = true;
+                break;
+            }
+        }
+
+        if (!flag){
+            alert(`Number ${input} is not in the array`);
+        }
+    </script>
+</body>
+</html>
