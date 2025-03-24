@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="text"> Toggle Dark/Light Mode </h1>
+    <p class="text"> Click the button to toggle between dark and light mode for this page </p>
+    <button id="button">Toggle dark mode</button>
+    <script>
+        // Gọi phần tử HTML
+        const button = document.getElementById('button');
+        // Thay đổi tính năng
+        button.addEventListener('click', () => {
+            if (document.body.style.backgroundColor === 'black') {
+                document.body.style.backgroundColor = "white";
+                document.body.style.color = "black";
+            }else{
+                document.body.style.backgroundColor = "black";
+                document.body.style.color = "white";
+            }
+
+        });
+
+    </script>
+</body>
+</html>

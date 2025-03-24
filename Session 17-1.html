@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="text"> This is a text </h1>
+    
+    <button id="button1"> Hide text </button>
+
+    <button id="button2"> Show text </button>
+    
+    <script>
+        // Gọi phần tử HTML
+        const text = document.getElementById('text');
+        const button1 = document.getElementById('button1');
+        const button2 = document.getElementById('button2');
+        // Thay đổi tính năng Button
+        button1.addEventListener('click', () => {
+            text.style.display = "none";
+        });
+
+        button2.addEventListener('click', () => {
+            text.style.display = "block";
+        });
+
+    </script>
+</body>
+</html>
