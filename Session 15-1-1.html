@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbersArray = [1,5,9,12,13,18,24,26,29,35];
+        console.log(numbersArray);
+        function countnumber(arr) {
+            let count = 0;
+            for (let i=0; i < arr.length; i++){
+                if(arr[i] >= 10){
+                    count++;
+                }
+            }
+            return count;
+        }
+        console.log("So luong so nguyen lon hon hoac bang 10 la:", countnumber(numbersArray));
+
+
+    </script>
+</body>
+</html>

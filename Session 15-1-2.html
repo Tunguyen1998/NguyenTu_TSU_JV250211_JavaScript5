@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbersArray = [1,5,9,12,13,18,24,26,29,35];
+        console.log(numbersArray);
+
+        let maxNumber = numbersArray[0];
+        let index = 0;
+        for (let i=1; i < numbersArray.length; i++){
+            if(numbersArray[i] > maxNumber){
+                maxNumber = numbersArray[i];
+                index = i;
+            }
+        
+        }
+        console.log(`So co gia tri lon nhat la: ${maxNumber} o vi tri index: ${index}`);
+        
+        
+      
+    </script>
+</body>
+</html>
